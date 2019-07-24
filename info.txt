@@ -1,3 +1,16 @@
+
+
+
+در صورت عدم مشاهده صحیح به لینک زیر مراجعه فرمایید
+if project does not work please check this link:
+http://www.ese-yara.ir/fanap-test-master/
+
+به دلیل قطعی اینترنت در حین کار و وابستگی پروژه تست به اینترنت
+بخش فیلتر پیاده سازی نشد
+because of low speed and disconnecting internet connection filter part does not implement
+
+
+----
 create repository on github
 
 create a web project 
