@@ -1,0 +1,15 @@
+create repository on github
+
+create a web project 
+
+call https://service-play.pod.land/srv/game/get api and get games 
+
+implement portrait card view for all games like card wiew in https://play.pod.land
+
+implement paging with "size" and "offset" in api param
+
+implement search with "filter" in api param
+
+show dialog after click on each card and show game detail.
+
+push project to github.
