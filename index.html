@@ -1,26 +1,297 @@
-
+﻿
 <!doctype html>
 <html dir="rtl" lang="fa-IR">
   <head>
   
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+	p.des, p.Link{
+		display: none;
+	}
+	img.pic {
+		border-top-left-radius: 10px 10px;
+		border-top-right-radius: 10px 10px;
+	}
+	ul.pagination{
+		direction: ltr;
+	}
+	body {
+		background-color: #f7f7f7;
+	}
+	</style>
 </head>
   
 <body class="rtl home page-template-default page page-id-590 wp-embed-responsive singular image-filters-enabled">
 <div class="container">
   <div class="row">
-    <div class="col-sm">
-      One of three columns
+	<button type="submit" id="search-btn" class="btn-search btn-success" style="box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);"  onclick="getDate()" >جستجو</button> 
+  </div>
+	<div class="row">
+				<div class="col-lg-12 col-12"><h3 class="title" style="/*! border: aquamarine; */direction: center;text-align: center;margin-top: 50px;margin-bottom: 44px;"><span style="border: 1px solid rgba(0,0,0,.1);border-radius: 29px;padding: 13px;background: #f0f0f0;direction: center;text-align: center;font-size: 20px;">بازی ها </span></h3></div>
+	</div>	
+	
+	<div class="row">
+				<div class="col-lg-1 col-0 " ></div>
+				<div class="col-lg-2 col-12 box-1 game-box" data-toggle="modal" data-target="#more-info-box" id="1"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+				<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+				<p class="des" ></p>	
+				<p class="Link" ></p>	
+				</div>
+				<div class="col-lg-2 col-12 box-2 game-box" data-toggle="modal" data-target="#more-info-box" id="2"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>
+				<div class="col-lg-2 col-12 box-3 game-box" data-toggle="modal" data-target="#more-info-box" id="3"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>
+					<p class="Link" ></p>						
+				</div>		
+				<div class="col-lg-2 col-12 box-4 game-box" data-toggle="modal" data-target="#more-info-box" id="4"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>
+					<p class="Link" ></p>						
+				</div>	
+				<div class="col-lg-2 col-12 box-5 game-box" data-toggle="modal" data-target="#more-info-box" id="5"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>				
+				<div class="col-lg-1 col-0 " ></div>
+	</div>
+	<div class="row">
+				<div class="col-lg-1 col-0 " ></div>
+				<div class="col-lg-2 col-12 box-6 game-box" data-toggle="modal" data-target="#more-info-box" id="6"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>	
+				<div class="col-lg-2 col-12 box-7 game-box" data-toggle="modal" data-target="#more-info-box" id="7"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>	
+				<div class="col-lg-2 col-12 box-8 game-box" data-toggle="modal" data-target="#more-info-box" id="8"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>	
+				<div class="col-lg-2 col-12 box-9 game-box" data-toggle="modal" data-target="#more-info-box" id="9"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>	
+					<p class="Link" ></p>	
+				</div>	
+				<div class="col-lg-2 col-12 box-10 game-box" data-toggle="modal" data-target="#more-info-box" id="10"><b></b><img width:100%"="" class="pic" src="wp-content/uploads/دسته-بندی-مخطوط.jpg" width="100% style=">
+					<div class="subtitle" style="background-color: #fff;padding: 10px;margin-bottom: 20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;text-align: center;r: ;border: 1px solid rgba(0,0,0,.1);border-top: 0px solid;">مخطوط</div>
+					<p class="des" ></p>
+					<p class="Link" ></p>	
+				</div>					
+				<div class="col-lg-1 col-0 game-box" ></div>
+	</div>	
+		
+
+	<div class="row">
+				<div class="col-lg-5 col-0 " ></div>
+				<div class="bd-example">
+					<nav aria-label="Page navigation example">
+					  <ul class="pagination">
+						<li class="page-item"><a class="page-link" id="10">1</a></li>
+						<li class="page-item"><a class="page-link" id="20">2</a></li>
+						<li class="page-item"><a class="page-link" id="30">3</a></li>
+					  </ul>
+					</nav>
+				</div>
+				<div class="col-lg-4 col-0 " ></div>				
+	</div>
+				
+
+
+
+<!-- Modal -->
+<div id="more-info-box" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-des" style="direction: rtl;text-align: right;" >توجه : این بازی دو نفره می باشد و میتوانید با حریف‌ها به صورت آنلاین به رقابت بپردازید.\n\nبازی بازی 2048 در ابتدا و به شکل رایج آن به صورت بازی تک نفره ابداع و عرضه شده است، ولی این بازی چند نفره می‌باشد و ما با استفاده از بستر بازیهای آنلاین بازیتک این امکان را ایجاد کردیم تا بتوان به صورت آنلاین با دیگر بازیکنان به رقابت پرداخت. هدف بازی 2048 رسیدن به بالاترین امتیاز از طریق جمع زدن اعداد یکسان موجود در خانه‌های حاوی آن‌هاست. امتیاز بازیکن‌ها در انتهای هر دور بازی، از مجموع تمام اعدادی به دست می‌آید که موفق به انطباق خانه‌های آن‌ها (جمع زدن آن‌ها) شده است. توجه داشته باشید در هر بازی شما تنها نیستید و باید علاوه بر کسب امتیاز، رقیب خود را نیز شکست دهید. در واقع، 2048 دونفره، یک بازی رقابتی-مشارکتی است. بدین معنی که هر چه امتیاز بیشتری در بازی کسب کنید، امتیاز شما در جدول بیشتر خواهد شد و حتی اگر شما بازنده بازی باشید این احتمال وجود دارد تا در جدول رده بندی صعود کنید.پس تا آخرین لحظه بازی تلاش کنید که به امتیازات خود اضافه کنید حتی اگر فکر می کنید که در نهایت بازنده بازی خواهید بود.</p>
+      
+	  </div>
+      <div class="modal-footer">
+	  <a  style="float:right;" href="" type="button" class="modal-link btn btn-success">لینک تریلر<span class="glyphicon glyphicon-download-alt"></span></a>
+  
+      </div>
     </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
-    <div class="col-sm">
-      One of three columns
-    </div>
+
   </div>
 </div>
+
     
+<!--script src="/fanap-test-master/js/bootstrap.min.js"></script-->
+ <!--script type='text/javascript' src="/fanap-test-master/js/jquery.min.js"></script-->
+
+   
+<script>
+//get api info
+
+$(document).ready(function() {
+	getDate();
+	
+	 $(".game-box").click(function(event) {
+		$ = jQuery;
+		$(this).attr('id');
+		console.log($(this).attr('id'));
+		$(".modal-des").text();
+		$(".modal-des").empty(".box-"+$(this).attr('id')+" .des");
+		$(".modal-des").text($(".box-"+$(this).attr('id')+" .des").text());
+		
+		$(".modal-link").attr("href", $(".box-"+$(this).attr('id')+" .Link").text());
+		
+		
+		var result= $("#search-btn");
+			$("#search-btn").empty();
+			$("#search-btn").text('در حال جستجو');	
+			var data = {
+				size : "1",
+				offset :  $(this).attr('id')	
+			}; 
+			urlSite= "https://service-play.pod.land/srv/game/get";
+			$.ajax({
+				url: urlSite,
+				type : 'get',
+				data : data,
+				success: function(response) {
+					console.log(response);	
+					//console.log(response.Result);
+					//console.log(response.Result[0]);
+					//console.log(response.Result[0].ApkSize);
+					for (i = 0, len = response.Result.length, text = ""; i < len; i++) {
+					  
+					   $("#"+[i]+" img").attr("src",response.Result[i].Banner);
+					 //  $("#"+[i]+ "b").empty();
+					  // $("#"+[i]+ "b").append(" سایز فایل:"+response.Result[i].ApkSize+"");
+						$("#"+[i]+" .subtitle").empty();
+						$("#"+[i]+" .subtitle").append(""+response.Result[i].Name+"");
+						
+						$(".box-"+[i]+" .des").empty();
+						$(".box-"+[i]+" .des").text(""+response.Result[i].GamePlayDesc+"");
+
+						$(".box-"+[i]+" .Link").empty();
+						$(".box-"+[i]+" .Link").text(""+response.Result[i].Trailer+"");
+					} 
+				$("#search-btn").text('جستجو'); 
+			}
+		});
+		
+	 });
+	
+	
+    $("a").click(function(event) {
+        
+		$ = jQuery;
+
+		      
+		var result= $("#search-btn");
+			$("#search-btn").empty();
+			$("#search-btn").text('در حال جستجو');	
+			var data = {
+				size : "10",
+				offset :  $(this).attr('id')	
+			}; 
+			urlSite= "https://service-play.pod.land/srv/game/get";
+			$.ajax({
+				url: urlSite,  
+				type : 'get',
+				data : data,
+				success: function(response) {
+					console.log(response);	
+					//console.log(response.Result);
+					//console.log(response.Result[0]);
+					//console.log(response.Result[0].ApkSize);
+					for (i = 0, len = response.Result.length, text = ""; i < len; i++) {
+					 // console.log(response.Result[i].ApkSize);
+					  
+					   $("#"+[i]+" img").attr("src",response.Result[i].Banner);
+					   //GamePlayDesc modal
+					 //  $("#"+[i]+ "b").empty();
+					  // $("#"+[i]+ "b").append(" سایز فایل:"+response.Result[i].ApkSize+"");
+						$("#"+[i]+" .subtitle").empty();
+						$("#"+[i]+" .subtitle").append(""+response.Result[i].Name+"");
+					} 
+				$("#search-btn").text('جستجو'); 
+			}
+		});
+    });
+	
+});
+
+
+function getDate(){
+	$ = jQuery;
+	var result= $("#search-btn");
+		$("#search-btn").empty();
+		$("#search-btn").text('در حال جستجو');	
+		var data = {
+			size : "10",
+			offset :  "20"	
+		}; 
+	
+	urlSite= "https://service-play.pod.land/srv/game/get";
+	  $.ajax({
+		url: urlSite,
+		type : 'get',
+		data : data,
+		success: function(response) {
+			console.log(response);
+			
+			//console.log(response.Result);
+			//console.log(response.Result[0]);
+			//console.log(response.Result[0].ApkSize);
+
+			for (i = 0, len = response.Result.length, text = ""; i < len; i++) {
+			  console.log(response.Result[i].Trailer);
+			  
+			   $("#"+[i]+" img").attr("src",response.Result[i].Banner);
+			 //  $("#"+[i]).append("<b> سایز فایل:"+response.Result[i].ApkSize+"</b>");
+			     $("#"+[i]+" .subtitle").append(""+response.Result[i].Name+"");
+				 
+				$(".box-"+[i]+" .des").empty();
+				$(".box-"+[i]+" .des").text(""+response.Result[i].GamePlayDesc+"");
+
+				$(".box-"+[i]+" .Link").empty();
+				$(".box-"+[i]+" .Link").text(""+response.Result[i].Trailer+"");
+								
+				
+				
+			} 
+			
+			//document.getElementById("dialog").innerHTML = obj.name + ", " + obj.age;
+			$("#search-btn").text('جستجو');
+			
+		}
+		
+
+
+	});
+		
+}
+
+
+
+//get api info
+
+  </script>
+
 
   </body>
-</html>
+  
+  
+
+  </html>
